@@ -1,0 +1,107 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,300&display=swap');
+
+
+/* Reset */
+
+
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, li {
+    font-family: 'Akaya Telivigala', cursive;;
+}
+
+
+/* Menu */
+
+.menu {
+    background: #803649;
+    padding: 15px 0;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+a.menu-logo {
+    display: block;
+    float: left;
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+    
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #FFB7CA;
+    font-size: 2.5em;
+    letter-spacing: 6px;
+}
+
+.menu-nav a:hover {
+    color: #fff;
+}
+
+.principal {
+    background: #FFB7CA;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.principal h1 {
+    color: #805C65;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+}
+
+.principal h1::after{
+    content: '';
+    display: block;
+    width: 463px;
+    height: 5px;
+    background: #CC93A2;
+    margin: 2px auto;
+}
+
+.principal h1::before {
+    content: '';
+    display: block;
+    width: 463px;
+    height: 5px;
+    background: #CC93A2;
+    margin: 0px auto;
+}
+
+.principal p {
+    width: 400px;
+    margin: 20px auto;
+    font-size: 1.125;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0 20px;
+}
