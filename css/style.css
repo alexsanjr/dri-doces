@@ -19,6 +19,22 @@ h1, h2, h3, li {
     font-family: 'Akaya Telivigala', cursive;;
 }
 
+h2 {
+    font-size: 2.25em ;
+    letter-spacing: 4px;
+    color: #805C65;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 1.5em ;
+    letter-spacing: 2px;
+    color: #000;
+    margin: 20px 0;
+}
+
+
+
 
 /* Menu */
 
@@ -67,6 +83,8 @@ a.menu-logo {
     color: #fff;
 }
 
+/* Principal */
+
 .principal {
     background: #FFB7CA;
     padding: 60px 0;
@@ -100,8 +118,74 @@ a.menu-logo {
 .principal p {
     width: 400px;
     margin: 20px auto;
-    font-size: 1.125;
+    font-size: 1.125em;
     font-style: italic;
     font-weight: lighter;
     padding: 0 20px;
+}
+
+/* Cardápio */
+
+.cardapio-container {
+    max-width: 960px;
+    margin: 60px auto 60px auto;
+    text-align: center;
+}
+
+.cardapio-container::after, .cardapio-container::before {
+        content: '';
+        display: table;
+        clear: both;
+}
+
+.cardapio h2::after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 5px;
+    background: #CC93A2;
+    margin: 2px 0 0 485px;
+}
+
+.cardapio h3 a {
+    font-size: 1.5em ;
+    letter-spacing: 2px;
+    color: #000;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.cardapio h3 a:hover {
+    color: #fff;
+}
+
+.cardapio h3::after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #fff;
+    margin: 3px auto;
+}
+
+.cardapio p {
+    font-size: 1.125em;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+
+.cardapio-gourmet, .cardapio-trufados {
+    background: #805C65;
+    width: 300px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.cardapio-comuns {
+    background: #FFB7CA;
+    width: 300px;
+    float: left;
+    margin: 0 10px 0 10px;
 }
