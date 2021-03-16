@@ -302,8 +302,8 @@ a.menu-logo {
 }
 
 .formulario textarea {
-    width: 335px;
-    height: 276px;
+    width: 305px;
+    height: 230px;
 }
 
 #form-info{
@@ -322,9 +322,9 @@ a.menu-logo {
 }
 
 #submit {
-    flex-basis: 100%;
     text-align: center;
     margin-bottom: 15px;
+    margin-right: 80px;
 }
 
 #submit button {
