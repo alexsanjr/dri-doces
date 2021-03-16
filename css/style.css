@@ -35,6 +35,7 @@ h3 {
 
 a {
     text-decoration: none;
+    transition: all .3s ease;
 }
 
 
@@ -153,7 +154,7 @@ a.menu-logo {
 .cardapio h3 a {
     font-size: 1.5em ;
     letter-spacing: 2px;
-    color: #333;
+    color: #252525;
     margin: 20px 0;
     text-decoration: none;
 }
@@ -176,6 +177,8 @@ a.menu-logo {
     padding: 0 30px;
     margin-bottom: 30px;
     letter-spacing: 2px;
+    color: #252525;
+    font-style: italic;
 }
 
 
@@ -228,25 +231,50 @@ a.menu-logo {
 }
 
 /* Formulario */
-#pedido {
-    background: rgba(204, 147, 162, 0.75);
-    width: 50%;
+
+.pedido-container {
+
+    background: #cc93a2bf;
+    max-width: 960px;
     height: auto;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 60px auto;
+}
+
+.pedido-container::after, .pedido-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.pedido h2 {
+    text-align: center;
+}
+
+.pedido h2::after {
+    content: '';
+    display: block;
+    width: 88px;
+    height: 5px;
+    background:#CC93A2;
+    margin: 2px 0 0 970px;
 }
 
 .formulario {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 35px 10px 0 95px ;
+}
+
+.formulario::after, .formulario::before{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .formulario label {
     display: block;
-    color: #803649;
-    font-weight: 900;
+    color: #252525;
+    font-size: 1.1875em ;
     margin-top: 10px;
+    
     padding-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -255,7 +283,7 @@ a.menu-logo {
     text-align: center;
 }
 .formulario .item-formulario {
-    padding: 10px 0;
+    margin-bottom: 5px;
 }
 
 .formulario input,textarea {
@@ -264,39 +292,56 @@ a.menu-logo {
     background: #805C65;
     border: #000 1px solid;
     padding: 5px;
-    width: 350px;
+    width: 270px;
     box-shadow: 2px 2px 5px #333;
     outline: none;
 }
 
-.formulario textarea {
-    height: 277px;
+.detalhes-form {
+    margin-left: 405px;
 }
 
-#form-flex, .item-formulario {
-    flex-basis: 50%;
+.formulario textarea {
+    width: 335px;
+    height: 276px;
+}
+
+#form-info{
+   float: left;
+}
+
+
+.formulario p {
+    font-size: 0.75em;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 20px 0px 35px 0;
+    line-height: 1.4em;
+    color: #252525;
 }
 
 #submit {
     flex-basis: 100%;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 #submit button {
     background: transparent;
-    border: #805C65 2px solid;
-    color: #805C65;
+    border: #252525 2px solid;
+    color: #252525;
     margin: 20px 0;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1.1875em;
 }
 
 #submit button:hover {
     font-weight: bold;
-    background: #805C65;
-    border: #805C65 2px solid;
-    color: rgba(204, 147, 162, 0.75);
+    color: #803649;
+    border: #803649 2px solid;
+    transition: all .1s ease;
 }
 
 
