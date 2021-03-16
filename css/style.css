@@ -226,3 +226,81 @@ a.menu-logo {
     border: #803649 2px solid;
     color: #FFB7CA;
 }
+
+/* Formulario */
+#pedido {
+    background: rgba(204, 147, 162, 0.75);
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.formulario label {
+    display: block;
+    color: #803649;
+    font-weight: 900;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.formulario #detalhes{
+    text-align: center;
+}
+.formulario .item-formulario {
+    padding: 10px 0;
+}
+
+.formulario input,textarea {
+    color: #FFB7CA;
+    font-family: 'Roboto', sans-serif;
+    background: #805C65;
+    border: #000 1px solid;
+    padding: 5px;
+    width: 350px;
+    box-shadow: 2px 2px 5px #333;
+    outline: none;
+}
+
+.formulario textarea {
+    height: 277px;
+}
+
+#form-flex, .item-formulario {
+    flex-basis: 50%;
+}
+
+#submit {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#submit button {
+    background: transparent;
+    border: #805C65 2px solid;
+    color: #805C65;
+    margin: 20px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit button:hover {
+    font-weight: bold;
+    background: #805C65;
+    border: #805C65 2px solid;
+    color: rgba(204, 147, 162, 0.75);
+}
+
+
+
+
+
+
