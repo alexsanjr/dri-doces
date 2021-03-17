@@ -235,16 +235,9 @@ a {
 .localizacao {
     background: #FFB7CA;
     margin-bottom: 60px;
-    max-height: 700px;
+    height: 100vh;
     width: 100%;
 }
-
-.localizacao::after, .localizacao::before {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 
 .localizacao h2 {
     padding-top: 60px;
@@ -266,10 +259,14 @@ a {
     height: 300px;
 }
 
-.endereco, .contato, .redes {
-    float: left;
-    margin-left: 350px;
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px auto;
 }
+.contato {
+   margin-right: 200px;
+ }
 
 .localizacao h3 {
     font-size: 1.5em;
@@ -309,18 +306,13 @@ a {
 /* Formulario */
 
 .pedido-container {
-
     background: #cc93a2bf;
-    max-width: 960px;
+    max-width: 60vw;
     height: auto;
     margin: 60px auto;
+    padding-top: 30px;
 }
 
-.pedido-container::after, .pedido-container::before{
-    content: '';
-    display: table;
-    clear: both;
-}
 
 .pedido h2 {
     text-align: center;
@@ -336,13 +328,9 @@ a {
 }
 
 .formulario {
+    display: flex;
+    flex-wrap: wrap;
     margin: 35px 10px 0 95px ;
-}
-
-.formulario::after, .formulario::before{
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .formulario label {
@@ -350,7 +338,6 @@ a {
     color: #252525;
     font-size: 1.1875em ;
     margin-top: 10px;
-    
     padding-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -374,6 +361,10 @@ a {
 }
 
 .detalhes-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     margin-left: 405px;
 }
 
@@ -382,12 +373,8 @@ a {
     height: 230px;
 }
 
-#form-info{
-   float: left;
-}
-
-
 .formulario p {
+    display: inline-block;
     font-size: 0.75em;
     font-style: italic;
     font-weight: 400;
