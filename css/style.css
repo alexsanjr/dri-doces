@@ -6,7 +6,8 @@
 /* Reset */
 
 
-body, h1, h2, h3, p, ul {
+* {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -47,34 +48,26 @@ a {
 }
 
 .menu-container {
-    max-width: 960px;
+    display: flex;
+    max-width: 100%;
+    height: 70px;
     margin: 0 auto;
-}
-
-.menu-container::after, .menu-container::before{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-
-a.menu-logo {
-    display: block;
-    float: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-nav {
-    float: right;
-    margin-right: 10px;
-    
+    text-align: center;
+    padding-left: 80px;
+    align-items: baseline;
 }
 
-.menu-nav li {
-    display: inline-block;
-}
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+} 
 
 .menu-nav a {
-    display: block;
     padding: 10px;
     text-decoration: none;
     color: #FFB7CA;
@@ -131,24 +124,27 @@ a.menu-logo {
 /* Cardápio */
 
 .cardapio-container {
-    max-width: 960px;
-    margin: 60px auto 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 60px auto;
     text-align: center;
 }
 
-.cardapio-container::after, .cardapio-container::before {
-        content: '';
-        display: table;
-        clear: both;
+.cardapio h2 {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .cardapio h2::after {
     content: '';
     display: block;
-    width: 65px;
+    width: 200px;
     height: 5px;
     background: #CC93A2;
-    margin: 2px 0 0 485px;
+    margin: 0 auto;
 }
 
 .cardapio h3 a {
@@ -186,14 +182,14 @@ a.menu-logo {
     background: #805C65;
     width: 300px;
     padding-bottom: 20px;
-    float: left;
+    /* float: left; */
     margin: 0 10px 0 10px;
 }
 
 .cardapio-comuns {
     background: #FFB7CA;
     width: 300px;
-    float: left;
+    /* float: left; */
     margin: 0 10px 0 10px;
     padding-bottom: 20px;
 }
