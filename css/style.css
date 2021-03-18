@@ -6,7 +6,8 @@
 /* Reset */
 
 
-body, h1, h2, h3, p, ul {
+* {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -47,34 +48,26 @@ a {
 }
 
 .menu-container {
-    max-width: 960px;
+    display: flex;
+    max-width: 100%;
+    height: 70px;
     margin: 0 auto;
-}
-
-.menu-container::after, .menu-container::before{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-
-a.menu-logo {
-    display: block;
-    float: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-nav {
-    float: right;
-    margin-right: 10px;
-    
+    text-align: center;
+    padding-left: 80px;
+    align-items: baseline;
 }
 
-.menu-nav li {
-    display: inline-block;
-}
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+} 
 
 .menu-nav a {
-    display: block;
     padding: 10px;
     text-decoration: none;
     color: #FFB7CA;
@@ -131,24 +124,27 @@ a.menu-logo {
 /* Cardápio */
 
 .cardapio-container {
-    max-width: 960px;
-    margin: 60px auto 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 60px auto;
     text-align: center;
 }
 
-.cardapio-container::after, .cardapio-container::before {
-        content: '';
-        display: table;
-        clear: both;
+.cardapio h2 {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .cardapio h2::after {
     content: '';
     display: block;
-    width: 65px;
+    width: 200px;
     height: 5px;
     background: #CC93A2;
-    margin: 2px 0 0 485px;
+    margin: 0 auto;
 }
 
 .cardapio h3 a {
@@ -186,14 +182,14 @@ a.menu-logo {
     background: #805C65;
     width: 300px;
     padding-bottom: 20px;
-    float: left;
+    /* float: left; */
     margin: 0 10px 0 10px;
 }
 
 .cardapio-comuns {
     background: #FFB7CA;
     width: 300px;
-    float: left;
+    /* float: left; */
     margin: 0 10px 0 10px;
     padding-bottom: 20px;
 }
@@ -239,16 +235,9 @@ a.menu-logo {
 .localizacao {
     background: #FFB7CA;
     margin-bottom: 60px;
-    max-height: 700px;
+    height: 100vh;
     width: 100%;
 }
-
-.localizacao::after, .localizacao::before {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 
 .localizacao h2 {
     padding-top: 60px;
@@ -270,10 +259,14 @@ a.menu-logo {
     height: 300px;
 }
 
-.endereco, .contato, .redes {
-    float: left;
-    margin-left: 350px;
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px auto;
 }
+.contato {
+   margin-right: 200px;
+ }
 
 .localizacao h3 {
     font-size: 1.5em;
@@ -313,18 +306,13 @@ a.menu-logo {
 /* Formulario */
 
 .pedido-container {
-
     background: #cc93a2bf;
-    max-width: 960px;
+    max-width: 60vw;
     height: auto;
     margin: 60px auto;
+    padding-top: 30px;
 }
 
-.pedido-container::after, .pedido-container::before{
-    content: '';
-    display: table;
-    clear: both;
-}
 
 .pedido h2 {
     text-align: center;
@@ -340,13 +328,9 @@ a.menu-logo {
 }
 
 .formulario {
+    display: flex;
+    flex-wrap: wrap;
     margin: 35px 10px 0 95px ;
-}
-
-.formulario::after, .formulario::before{
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .formulario label {
@@ -354,7 +338,6 @@ a.menu-logo {
     color: #252525;
     font-size: 1.1875em ;
     margin-top: 10px;
-    
     padding-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -378,6 +361,10 @@ a.menu-logo {
 }
 
 .detalhes-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     margin-left: 405px;
 }
 .detalhes-form textarea {
@@ -391,12 +378,8 @@ a.menu-logo {
     height: 230px;
 }
 
-#form-info{
-   float: left;
-}
-
-
 .formulario p {
+    display: inline-block;
     font-size: 0.75em;
     font-style: italic;
     font-weight: 400;
