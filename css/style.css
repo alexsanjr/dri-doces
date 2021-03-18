@@ -380,6 +380,11 @@ a.menu-logo {
 .detalhes-form {
     margin-left: 405px;
 }
+.detalhes-form textarea {
+    resize: none;
+}
+
+
 
 .formulario textarea {
     width: 305px;
@@ -437,7 +442,7 @@ a.menu-logo {
 
 .icones-rodape ul {
     margin-top: 20px;
-    margin-right: 780px;
+    margin-right: 500px;
 }
 
 .icones-rodape ul li {
@@ -452,7 +457,7 @@ a.menu-logo {
     font-style: italic;
     font-weight: 300;
     font-size: 1.125em;
-    margin-left: 780px;
+    margin-left: 500px;
     margin-top: 5px;
     
 }
