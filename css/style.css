@@ -36,6 +36,11 @@ a {
     transition: all .3s ease;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 
 /* ------------------------- MENU -------------------------------- */
 
@@ -55,18 +60,18 @@ a {
     justify-content: center;
 }
  /* Menu - navbar */
-.menu-nav {
-    text-align: center;
-    padding-left: 80px;
-    align-items: baseline;
-}
 
-.menu-nav ul {
+ .menu-nav {
+    padding-left: 80px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
+    justify-content: flex-end;
+
 } 
+
+.menu-nav ul li {
+    display: inline-block;
+    list-style: none;
+}
 
 .menu-nav a {
     padding: 10px;
@@ -124,11 +129,7 @@ a {
 
 /* Cardápio */
 
-.cardapio-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
+.cardapio-estilo {   
     margin: 60px auto;
     text-align: center;
 }
@@ -142,10 +143,10 @@ a {
 .cardapio h2::after {
     content: '';
     display: block;
-    width: 200px;
+    width: 67px;
     height: 5px;
     background: #CC93A2;
-    margin: 0 auto;
+    margin: 5px 0 0 49.5vw;
 }
 
 .cardapio h3 a {
@@ -234,8 +235,6 @@ a {
 /* Contato - Mapa */
 .localizacao {
     background: #FFB7CA;
-    margin-bottom: 60px;
-    height: 100vh;
     width: 100%;
 }
 
@@ -251,7 +250,7 @@ a {
     width: 88px;
     height: 5px;
     background:#CC93A2;
-    margin: 2px 0 0 950px;
+    margin: 2px 0 0 53vw;
 }
 
 .mapa iframe {
@@ -259,15 +258,15 @@ a {
     height: 300px;
 }
  
+
 /* Contato - informacoes */
 .informacoes {
-    display: flex;
-    justify-content: space-around;
-    margin: 45px auto;
+    background: #FFB7CA;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+
 }
-.contato {
-   margin-right: 200px;
- }
+
 
 .localizacao h3 {
     font-size: 1.5em;
@@ -290,6 +289,11 @@ a {
     font-size: 1.125em;
     font-style: italic;
     color: #252525;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .redes ul {
@@ -320,7 +324,7 @@ a {
     width: 88px;
     height: 5px;
     background:#CC93A2;
-    margin: 2px 0 0 970px;
+    margin: 2px 0 0 52vw;
 }
 
 /* Formulario - geral */
@@ -433,22 +437,20 @@ a {
 
 /* ------------------------- RODAPÉ -------------------------------------*/
 
+
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #803936;
     width: 100%;
-    height: 100px;
 }
 
-.itens-rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* pai */
+.rodape-container {
+    /* background: blue; */
 }
 
+<<<<<<< HEAD
 .icones-rodape ul {
 <<<<<<< HEAD
     margin-top: 20px;
@@ -476,10 +478,16 @@ a {
     font-size: 1.125em;    
 >>>>>>> main
 }
+=======
+/* filhos */
+>>>>>>> main
 
-.vazia {
-    width: 350px;
+.redes-rodape ul {  
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
-
-
+.redes-rodape ul li {
+    margin: 0 10px;
+}
