@@ -268,7 +268,7 @@ img {
 }
 
 
-.localizacao h3 {
+.informacoes h3 {
     font-size: 1.5em;
     color: #805C65;
     text-transform: uppercase;
@@ -283,9 +283,8 @@ img {
     margin: 2px 0 0 70px;
 }
 
-.localizacao p {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.informacoes p {
+    line-height: 1.4em;
     font-size: 1.125em;
     font-style: italic;
     color: #252525;
@@ -330,27 +329,15 @@ img {
 /* Formulario - geral */
 .pedido-container {
     background: #cc93a2bf;
-    max-width: 60%;
     height: auto;
-    margin: 60px auto;
-    padding-top: 30px;
+    padding: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 /* Class .formulario */
 
-.formulario {
-    flex-wrap: wrap;
-}
-
-.form-info, .item-formulario {
-    flex-basis: 50%
-}
-
-.formulario {
-    display: flex;
-}
-
-.formulario #texto-form {
+#texto-form {
     font-size: 0.70em;
     font-style: italic;
     font-weight: 400;
@@ -368,8 +355,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
+
+
 
 #form-info label, .detalhes-form label {
     display: block;
@@ -384,7 +372,7 @@ img {
     color: #FFB7CA;
     font-family: 'Roboto', sans-serif;
     background: #805C65;
-    border: #000 1px solid;
+    border: #252525 1px solid;
     padding: 5px;
     width: 270px;
     box-shadow: 2px 2px 5px #333;
@@ -398,7 +386,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+
 }
 .detalhes-form textarea {
     resize: none;
@@ -408,14 +396,14 @@ img {
 
 .detalhes-form textarea {
     width: 305px;
-    height: 275px;
+    height: 240px;
     resize: none;
 }
 
 /* Id - #submit (botão) */
 #submit {
     text-align: center;
-    flex-basis: 100%;
+    margin: 0 auto;
 }
 
 #submit button {
@@ -490,4 +478,13 @@ img {
 
 .redes-rodape ul li {
     margin: 0 10px;
+}
+
+.rodape p {
+    color: #C4C4C4;
+}
+
+.paragrafo-rodape {
+    display: flex;
+    align-items: center;
 }
