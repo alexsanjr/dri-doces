@@ -388,11 +388,6 @@ img {
     align-items: center;
 
 }
-.detalhes-form textarea {
-    resize: none;
-}
-
-
 
 .detalhes-form textarea {
     width: 305px;
@@ -434,41 +429,10 @@ img {
 }
 
 /* pai */
-.rodape-container {
+.rodape {
     /* background: blue; */
 }
 
-<<<<<<< HEAD
-.icones-rodape ul {
-<<<<<<< HEAD
-    margin-top: 20px;
-    margin-right: 500px;
-=======
-    display: flex;
-    list-style: none;
->>>>>>> main
-}
-.icones-rodape ul li {
-    padding-left: 10px;
-}
-
-.icones-rodape, .texto-rodape {
-    color: #c4c4c4;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 300;
-<<<<<<< HEAD
-    font-size: 1.125em;
-    margin-left: 500px;
-    margin-top: 5px;
-    
-=======
-    font-size: 1.125em;    
->>>>>>> main
-}
-=======
-/* filhos */
->>>>>>> main
 
 .redes-rodape ul {  
     list-style: none;
