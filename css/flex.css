@@ -47,3 +47,19 @@
     max-width: calc(100% - 20px);
 }
 
+<<<<<<< Updated upstream
+=======
+@media (max-width: 739px) {
+    .flex {
+        max-width: 300px;
+        flex-direction: column;
+        
+    }
+    .flex-item-4, .flex-item-8, .flex-item-10, .flex-item-12 {
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 100%;
+        align-self: auto;
+    }
+}
+>>>>>>> Stashed changes
