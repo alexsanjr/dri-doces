@@ -52,7 +52,6 @@ img {
  /* Menu - navbar */
 
  .menu-nav {
-    padding-left: 80px;
     display: flex;
     justify-content: flex-end;
 
@@ -63,7 +62,7 @@ img {
     list-style: none;
 }
 
-.menu-nav a {
+.menu-nav a, .menu-nav span {
     padding: 10px;
     text-decoration: none;
     color: #FFB7CA;
@@ -71,7 +70,8 @@ img {
     letter-spacing: 6px;
 }
 
-.menu-nav a:hover {
+
+.menu-nav a:hover, .menu-nav span:hover {
     color: #fff;
 }
 
@@ -92,7 +92,7 @@ img {
 .principal h1::after{
     content: '';
     display: block;
-    width: 32vw;
+    width: 25vw;
     height: 5px;
     background: #CC93A2;
     margin: 2px auto;
@@ -101,7 +101,7 @@ img {
 .principal h1::before {
     content: '';
     display: block;
-    width: 463px;
+    width: 25vw;
     height: 5px;
     background: #CC93A2;
     margin: 0px auto;
@@ -266,7 +266,16 @@ img {
     text-transform: uppercase;
 }
 
-.endereco h3::after, .contato h3::after {
+.endereco h3::after{
+    content: '';
+    display: block;
+    width: 62px;
+    height: 5px;
+    background:#CC93A2;
+    margin: 2px 0 0 70px;
+}
+
+.contato h3::after {
     content: '';
     display: block;
     width: 62px;
@@ -425,8 +434,6 @@ img {
     /* background: blue; */
 }
 
-<<<<<<< Updated upstream
-=======
 .icones-rodape ul {
     display: flex;
     list-style: none;
@@ -444,7 +451,6 @@ img {
     font-size: 1.125em;
 }
 
->>>>>>> Stashed changes
 
 .redes-rodape ul {  
     list-style: none;

@@ -14,52 +14,29 @@
 
 .flex-item-2 {
     flex: 0 0 calc(16.666% - 20px);
-    max-width: calc(16.666% - 20px);
 }
 
 .flex-item-3 {
     flex: 0 0 calc(25% - 20px);
-    max-width: calc(25% - 20px);
 }
 
 .flex-item-4 {
-    flex: 0 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 0 0 calc(33.333% - 20px);   
 }
 
 .flex-item-6 {
     flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
 }
 
 .flex-item-8 {
     flex: 0 0 calc(66.666% - 20px);
-    max-width: calc(66.666% - 20px);
 }
 
 .flex-item-10 {
     flex: 0 0 calc(83.333% - 20px);
-    max-width: calc(83.333% - 20px);
 }
 
 .flex-item-12 {
     flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
 }
 
-<<<<<<< Updated upstream
-=======
-@media (max-width: 739px) {
-    .flex {
-        max-width: 300px;
-        flex-direction: column;
-        
-    }
-    .flex-item-4, .flex-item-8, .flex-item-10, .flex-item-12 {
-        margin-left: 0px;
-        margin-right: 0px;
-        max-width: 100%;
-        align-self: auto;
-    }
-}
->>>>>>> Stashed changes
